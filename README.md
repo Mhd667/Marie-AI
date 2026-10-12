@@ -51,7 +51,7 @@ npm start       # un seul serveur Node sert l'API ET l'interface sur http://loca
 | Variable | Défaut | Description |
 | --- | --- | --- |
 | `GROQ_API_KEY` | — | **Obligatoire** pour que l'assistante réponde. Clé créée sur <https://console.groq.com/keys>. |
-| `GROQ_MODEL` | `llama-3.3-70b-versatile` | Modèle Groq ; il doit prendre en charge l'appel d'outils. |
+| `GROQ_MODEL` | `openai/gpt-oss-120b` | Modèle Groq ; il doit prendre en charge l'appel d'outils. |
 | `PORT` | `8787` | Port du serveur. |
 | `CATALOG_ADAPTER` | `demo` | `demo` = catalogue fictif local. `shared` = future base partagée (pas encore implémentée : le serveur refuse de démarrer). |
 | `DATA_DIR` | `./data` (dans `server/`) | Dossier des données locales : catalogue de démo, conversations, opérations, photos. |

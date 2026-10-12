@@ -29,7 +29,7 @@ function resolveDataDir(value: string | undefined): string {
 export const config = {
   port: Number(process.env.PORT) || 8787,
   groqApiKey: process.env.GROQ_API_KEY?.trim() || undefined,
-  groqModel: process.env.GROQ_MODEL?.trim() || 'llama-3.3-70b-versatile',
+  groqModel: process.env.GROQ_MODEL?.trim() || 'openai/gpt-oss-120b',
   catalogAdapter: (process.env.CATALOG_ADAPTER?.trim() || 'demo') as 'demo' | 'shared',
   dataDir: resolveDataDir(process.env.DATA_DIR?.trim()),
   webDistDir: join(PROJECT_ROOT, 'web', 'dist'),
